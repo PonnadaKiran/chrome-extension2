@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Download Images and Tables",
+    "version": "1.0",
+    "description": "Download all images or all tables from a webpage",
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Download"
+    },
+    "permissions": ["downloads", "activeTab", "scripting"],
+    "host_permissions":[
+       "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
